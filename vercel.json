@@ -1,5 +1,15 @@
 {
     "version": 2,
-    "builds": [{"src": "•/index.js", "use": "@vercel/node" }],
-    "routes": [{"src": "/(.*)", "dest": "/"}]
+    "builds": [
+        {
+        "src": "rdr.php",
+        "use": "@vercel/php"
+        }
+    ],
+    "routes": [
+        {
+        "src": "/(.*)",
+        "dest": "/rdr.php"
+        }
+    ]
 }
